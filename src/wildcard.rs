@@ -8,7 +8,7 @@
 ///
 /// If no wildcard is present in the pattern the inputs must be an exact match.
 ///
-pub fn matches(pattern: &str, s: &str) -> bool {
+pub(crate) fn matches(pattern: &str, s: &str) -> bool {
     let mut piter = pattern.chars();
     let mut siter = s.chars();
 
